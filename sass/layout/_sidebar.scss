@@ -1,0 +1,29 @@
+.sidebar {
+  flex: 0 1 25%;
+  display: grid;
+  grid-template-rows: 5rem 5rem 1fr 15rem;
+  grid-template-columns: 3rem 1fr 5rem;
+  align-items: end;
+
+  &__menu {
+    grid-column: 2/3;
+  }
+
+  &__btn-box {
+    grid-column: 2/3;
+
+    display: grid;
+  }
+  &__content {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content 4rem;
+    grid-row-gap: 3rem;
+    align-items: end;
+  }
+
+  &__add {
+    grid-row: 4 / -1;
+    grid-column: 1 / -1;
+  }
+}

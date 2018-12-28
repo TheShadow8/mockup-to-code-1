@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>mShop | Shopping everyday</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__menu"><i class="fas fa-bars title"></i></div>
+
+        <div class="sidebar__btn-box">
+          <button class="sidebar__btn sidebar__btn--previous" disabled>Previous</button>
+          <button class="sidebar__btn sidebar__btn--next">Next</button>
+        </div>
+
+        <div class="sidebar__content">
+          <div class="sidebar__title title">Baby Blue Blazer</div>
+          <div class="sidebar__detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et quas ipsa.
+            Excepturi tempore necessitatibus aliquam ducimus at! Vitae quo debitis minus doloremque
+            eum at temporibus a, molestias natus magni.
+          </div>
+          <div class="sidebar__sizes">
+            <button href="" class="sidebar__size sidebar__size--active">36</button>
+            <button href="" class="sidebar__size">38</button>
+            <button href="" class="sidebar__size">40</button>
+            <button href="" class="sidebar__size sidebar__size--disable" disabled>42</button>
+          </div>
+          <h1 class="sidebar__price title">$349</h1>
+        </div>
+
+        <button class="sidebar__add">+ Add to bag</button>
+      </div>
+
+      <div class="main-page">
+        <div class="cart__background">&nbsp;</div>
+        <div class="main-page__nav">
+          <button class="main-page__nav--search"><i class="fas fa-search title"></i></button>
+          <button class="main-page__nav--cart" type="checkbox">
+            <i class="fas fa-suitcase title"></i>
+          </button>
+          <!-- <div class="main-page__cart cart"><div class="cart__container">abc123</div></div> -->
+        </div>
+        <div class="main-page__slogan slogan">
+          <div class="slogan">Spring</div>
+          <div class="slogan">Summer 18</div>
+        </div>
+        <div class="main-page__carousel carousel">
+          <div class="main-page__carousel--info">
+            <div class="main-page__carousel--current title">01</div>
+            <div class="main-page__carousel--divider"></div>
+            <div class="main-page__carousel--total">03</div>
+          </div>
+          <div class="main-page__carousel--bar">
+            <div class="main-page__carousel--bar-current"></div>
+          </div>
+        </div>
+        <div class="main-page__image"><img src="img/springsummer18-1.png" alt="product" /></div>
+      </div>
+    </div>
+  </body>
+</html>
