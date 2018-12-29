@@ -1,10 +1,8 @@
 .cart {
   background-color: $color-primary;
-  flex: 1 1 75%;
-  height: 100%;
 
   display: grid;
-  grid-template-rows: 5rem max-content 1fr 15rem 15rem;
+  grid-template-rows: 5rem max-content 1fr 15rem 12rem;
   grid-template-columns: 10rem 1fr max-content;
 
   &__nav {

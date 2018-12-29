@@ -1,4 +1,7 @@
 .container {
-  display: flex;
-  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 99.5vh;
+  width: 99.5vw;
+  margin: 0 auto;
 }

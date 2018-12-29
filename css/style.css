@@ -13,10 +13,7 @@ body {
   font-family: "Arimo", sans-serif;
   color: #9b9898;
   font-size: 1.4rem;
-  font-weight: 400;
-  display: flex;
-  height: 72.5rem;
-  width: 100vw; }
+  font-weight: 400; }
 
 .title {
   color: #2a2838;
@@ -28,8 +25,11 @@ body {
   font-weight: 700; }
 
 .container {
-  display: flex;
-  flex-basis: 100%; }
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 99.5vh;
+  width: 99.5vw;
+  margin: 0 auto; }
 
 .sidebar {
   flex: 0 1 25%;
@@ -54,8 +54,6 @@ body {
 
 .main-page {
   background-color: #f7e4df;
-  flex: 0 1 75%;
-  height: 100%;
   display: grid;
   grid-template-rows: 5rem 1fr 15rem;
   grid-template-columns: 10rem 1fr max-content;
@@ -83,10 +81,8 @@ body {
 
 .cart {
   background-color: #d9eaf9;
-  flex: 1 1 75%;
-  height: 100%;
   display: grid;
-  grid-template-rows: 5rem max-content 1fr 15rem 15rem;
+  grid-template-rows: 5rem max-content 1fr 15rem 12rem;
   grid-template-columns: 10rem 1fr max-content; }
   .cart__nav {
     grid-row: 1 / 2;
@@ -164,15 +160,11 @@ body {
   font-weight: 700; }
 
 .main-page__image {
-  position: relative;
   justify-self: end;
   height: 100%; }
   .main-page__image img {
-    position: absolute;
     display: block;
-    max-height: 100%;
-    top: 0;
-    left: -50rem; }
+    max-height: 100%; }
 
 .main-page__nav {
   display: flex;
@@ -185,8 +177,6 @@ body {
     outline: none;
     background-color: #f7e4df;
     cursor: pointer; }
-  .main-page__nav--cart {
-    display: grid; }
 
 .main-page__carousel {
   height: 80%;
@@ -221,7 +211,7 @@ body {
     cursor: pointer; }
 
 .cart__title {
-  font-size: 8rem;
+  font-size: 7rem;
   margin: 3rem 0;
   color: #fff; }
 
@@ -249,7 +239,7 @@ body {
     flex-basis: 21%; }
 
 .cart__summary {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   grid-row: 4/ 5;
   grid-column: 2 / 3;
   justify-self: end; }
