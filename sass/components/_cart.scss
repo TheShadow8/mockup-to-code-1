@@ -22,36 +22,55 @@
 
   &__detail {
     border-bottom: 1px solid $color-grey-dark-1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 2rem;
+    grid-template-rows: 5rem auto;
+
+    justify-items: start;
 
     small {
       padding: 0 0.5rem;
     }
-    &--titles {
+    &--title {
+      grid-row: 1 / 2;
       text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-    &--item {
-      padding: 1rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &--images {
+      grid-column: 1 / 2;
 
+      @include flexColumnSpaceAround;
       img {
-        height: 5.5rem;
-        width: 5.5rem;
+        display: block;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
       }
     }
 
-    &--contain {
-      flex-basis: 17%;
+    &--desc {
+      grid-column: 2 / 3;
+      @include flexColumnSpaceAround;
     }
 
-    &--title {
-      flex-basis: 21%;
+    &--size {
+      grid-column: 3 / 4;
+      @include flexColumnSpaceAround;
+    }
+
+    &--unit {
+      grid-column: 4 / 5;
+      @include flexColumnSpaceAround;
+    }
+
+    &--aumount {
+      grid-column: 5 / 6;
+      @include flexColumnSpaceAround;
+    }
+
+    &--remove {
+      grid-column: 6 / -1;
+      @include flexColumnSpaceAround;
     }
   }
 
