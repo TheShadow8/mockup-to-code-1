@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>mShop | Shopping everyday</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__menu"><i class="fas fa-bars title"></i></div>
+
+        <div class="sidebar__btn-box">
+          <button class="sidebar__btn sidebar__btn--previous" disabled>Previous</button>
+          <button class="sidebar__btn sidebar__btn--next">Next</button>
+        </div>
+
+        <div class="sidebar__content">
+          <div class="sidebar__title title">Baby Blue Blazer</div>
+          <div class="sidebar__detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et quas ipsa.
+            Excepturi tempore necessitatibus aliquam ducimus at! Vitae quo debitis minus doloremque
+            eum at temporibus a, molestias natus magni.
+          </div>
+          <div class="sidebar__sizes">
+            <button href="" class="sidebar__size sidebar__size--active">36</button>
+            <button href="" class="sidebar__size">38</button>
+            <button href="" class="sidebar__size">40</button>
+            <button href="" class="sidebar__size sidebar__size--disable" disabled>42</button>
+          </div>
+          <h1 class="sidebar__price title">$349</h1>
+        </div>
+
+        <button class="sidebar__add">+ Add to bag</button>
+      </div>
+
+      <div class="cart">
+        <div class="cart__nav">
+          <button class="cart__nav--search" type="checkbox">
+            <i class="fas fa-search title"></i>
+          </button>
+          <button class="cart__nav--cart" type="checkbox">
+            <i class="fas fa-suitcase title"></i>
+          </button>
+        </div>
+
+        <div class="cart__title">Shopping basket</div>
+        <div class="cart__detail">
+          <div class="cart__detail--titles">
+            <div class="cart__detail--title title">Product</div>
+            <div class="cart__detail--title title">Description</div>
+            <div class="cart__detail--title title">Size</div>
+            <div class="cart__detail--title title">Units</div>
+            <div class="cart__detail--title title">Amount</div>
+          </div>
+
+          <div class="cart__detail--item">
+            <div class="cart__detail--contain"><img src="/img/p1.jpg" alt="" /></div>
+            <div class="cart__detail--contain">Baby Blue Blazer</div>
+            <div class="cart__detail--contain">36</div>
+            <div class="cart__detail--contain">
+              <small class="title"><</small> 2 <small class="title">></small>
+            </div>
+            <div class="cart__detail--contain">$349</div>
+            <div class="cart__detail--remove title">X</div>
+          </div>
+
+          <div class="cart__detail--item">
+            <div class="cart__detail--contain"><img src="/img/p2.jpg" alt="" /></div>
+            <div class="cart__detail--contain">Top with callar</div>
+            <div class="cart__detail--contain">34</div>
+            <div class="cart__detail--contain">
+              <small class="title"><</small> 1 <small class="title">></small>
+            </div>
+            <div class="cart__detail--contain">$279</div>
+            <div class="cart__detail--remove title">X</div>
+          </div>
+
+          <div class="cart__detail--item">
+            <div class="cart__detail--contain"><img src="/img/p3.jpg" alt="" /></div>
+            <div class="cart__detail--contain">Pink Pale Dress</div>
+            <div class="cart__detail--contain">35</div>
+            <div class="cart__detail--contain">
+              <small class="title"><</small> 1 <small class="title">></small>
+            </div>
+            <div class="cart__detail--contain">$559</div>
+            <div class="cart__detail--remove title">X</div>
+          </div>
+        </div>
+        <div class="cart__summary">
+          <div class="cart__summary--title">
+            <div>Total products:</div>
+            <div>Total products:</div>
+            <div class="title">Total:</div>
+          </div>
+          <div class="cart__summary--price">
+            <div>$1187.00</div>
+            <div>$0.00</div>
+            <div class="title">$1187.00</div>
+            <small>*including VAT</small>
+          </div>
+        </div>
+        <div class="cart__btn">
+          <button class="cart__btn--shop">Continue shopping</button>
+          <button class="cart__btn--checkout">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

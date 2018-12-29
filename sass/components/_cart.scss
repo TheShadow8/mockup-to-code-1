@@ -1,21 +1,96 @@
 .cart {
-  display: grid;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
 
-  //   &__background {
-  //     height: 100vh;
-  //     width: 75vw;
-  //     position: fixed;
-  //     background-color: $color-primary;
+    button {
+      margin-right: 3rem;
+      margin-left: 2rem;
+      border: none;
+      outline: none;
+      background-color: $color-primary;
+      cursor: pointer;
+    }
+  }
 
-  //     // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  //   }
-  //   &__container {
-  //     height: 100vh;
-  //     width: 75vw;
-  //     position: fixed;
-  //     top: 0;
-  //     left: 0;
-  //     z-index: 200;
-  //     opacity: 1;
-  //   }
+  &__title {
+    font-size: 8rem;
+    margin: 3rem 0;
+    color: #fff;
+  }
+
+  &__detail {
+    border-bottom: 1px solid $color-grey-dark-1;
+
+    small {
+      padding: 0 0.5rem;
+    }
+    &--titles {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // &:first-child {
+      //  width: ;
+      // }
+    }
+
+    &--item {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    &--contain {
+      flex-basis: 17%;
+    }
+
+    &--title {
+      flex-basis: 21%;
+    }
+  }
+
+  &__summary {
+    margin-top: 2rem;
+    grid-row: 4/ 5;
+    grid-column: 2 / 3;
+    justify-self: end;
+
+    &--price {
+      margin-left: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__btn {
+    button {
+      outline: none;
+      border: none;
+      text-align: center;
+      padding: 2rem 4rem;
+    }
+    &--shop {
+      cursor: pointer;
+      background-color: $color-primary;
+      color: $color-grey-dark-1;
+    }
+
+    &--checkout {
+      background-color: $color-primary-dark-2;
+      color: #fff;
+      font-weight: 700;
+      padding: 2rem 4rem;
+    }
+  }
 }

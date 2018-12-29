@@ -1,7 +1,7 @@
 .main-page {
   background-color: $color-secondary;
-  height: 100vh;
-  flex: 1 1 75%;
+  flex: 0 1 75%;
+  height: 100%;
 
   display: grid;
   grid-template-rows: 5rem 1fr 15rem;
@@ -17,6 +17,7 @@
     grid-row: 1/ -1;
     grid-column: 2 / -1;
   }
+
   &__slogan {
     grid-row: 2/ 3;
     grid-column: 2 / 3;
@@ -26,7 +27,6 @@
 
   &__carousel {
     grid-row: 3/-1;
-
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
