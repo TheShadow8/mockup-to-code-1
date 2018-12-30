@@ -48,13 +48,93 @@
       </div>
       <div class="main-page">
         <div class="main-page__nav">
-          <button class="main-page__nav--search" type="checkbox">
+          <input class="main-page__nav--checkbox-search" type="checkbox" id="nav-search" />
+
+          <label for="nav-search" class=" main-page__nav--search main-page__nav--icon">
             <i class="fas fa-search title"></i>
-          </button>
-          <button class="main-page__nav--cart" type="checkbox">
+          </label>
+
+          <input class="main-page__nav--checkbox-cart" type="checkbox" id="nav-cart" />
+          <label for="nav-cart" class=" main-page__nav--cart main-page__nav--icon">
             <i class="fas fa-suitcase title"></i>
-          </button>
-          <!-- <div class="main-page__cart cart"><div class="cart__container">abc123</div></div> -->
+          </label>
+
+          <div class="main-page__nav--background">&nbsp;</div>
+
+          <div class="main-page__nav--cart-page cart">
+            <div class="cart__nav">
+              <button class="cart__nav--search"></button> <button class="cart__nav--cart"></button>
+            </div>
+
+            <div class="cart__title">Shopping basket</div>
+
+            <div class="cart__detail">
+              <div class="cart__detail--title title">Product</div>
+              <div class="cart__detail--images">
+                <img src="/img/p1.jpg" alt="" /> <img src="/img/p2.jpg" alt="" />
+                <img src="/img/p3.jpg" alt="" />
+              </div>
+
+              <div class="cart__detail--title title">Description</div>
+              <div class="cart__detail--desc">
+                <div class="cart__detail--contain">Baby Blue Blazer</div>
+                <div class="cart__detail--contain">Top with callar</div>
+                <div class="cart__detail--contain">Pink Pale Dress</div>
+              </div>
+
+              <div class="cart__detail--title title">Size</div>
+              <div class="cart__detail--size">
+                <div class="cart__detail--contain">36</div>
+                <div class="cart__detail--contain">35</div>
+                <div class="cart__detail--contain">34</div>
+              </div>
+
+              <div class="cart__detail--title title">Units</div>
+              <div class="cart__detail--unit">
+                <div class="cart__detail--contain">
+                  <small class="title"><</small> 2 <small class="title">></small>
+                </div>
+                <div class="cart__detail--contain">
+                  <small class="title"><</small> 1 <small class="title">></small>
+                </div>
+                <div class="cart__detail--contain">
+                  <small class="title"><</small> 1 <small class="title">></small>
+                </div>
+              </div>
+
+              <div class="cart__detail--title title">Amount</div>
+              <div class="cart__detail--aumount">
+                <div class="cart__detail--contain">$349</div>
+                <div class="cart__detail--contain">$279</div>
+                <div class="cart__detail--contain">$559</div>
+              </div>
+
+              <div class="cart__detail--title title">&nbsp;</div>
+              <div class="cart__detail--remove">
+                <div class="cart__detail--remove title">X</div>
+                <div class="cart__detail--remove title">X</div>
+                <div class="cart__detail--remove title">X</div>
+              </div>
+            </div>
+
+            <div class="cart__summary">
+              <div class="cart__summary--title">
+                <div>Total products:</div>
+                <div>Total products:</div>
+                <div class="title">Total:</div>
+              </div>
+              <div class="cart__summary--price">
+                <div>$1187.00</div>
+                <div>$0.00</div>
+                <div class="title">$1187.00</div>
+                <small>*including VAT</small>
+              </div>
+            </div>
+            <div class="cart__btn">
+              <button class="cart__btn--shop" id="btnShop">Continue shopping</button>
+              <button class="cart__btn--checkout">Continue</button>
+            </div>
+          </div>
         </div>
         <div class="main-page__slogan slogan">
           <div class="slogan">Spring</div>
@@ -73,5 +153,14 @@
         <div class="main-page__image"><img src="img/springsummer18-1.png" alt="product" /></div>
       </div>
     </div>
+
+    <script>
+      //For close cart page
+      const btnShop = document.getElementById('btnShop');
+      const cartToggle = document.getElementById('nav-cart');
+      btnShop.addEventListener('click', () => {
+        cartToggle.checked = false;
+      });
+    </script>
   </body>
 </html>
